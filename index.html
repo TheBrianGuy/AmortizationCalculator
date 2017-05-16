@@ -1,0 +1,57 @@
+<!DOCTYPE	html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Amortization Calculator</title>
+
+<!-- LQuery Core 3.2.1 -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/amortization.css">
+
+<script src="assets/javascript/amortization.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+	<h1 class="text-center">Amortization Calculator</h1>
+</div>
+
+<form>
+	<label for="principal">Amount to borrow:</label>
+	<input id="principal" type="text" name="principal">
+
+	<label for="duration">Duration of loan in years:</label>
+	<input id="duration" type="text" name="duration">
+
+	<label for="rate">Interest rate:</label>
+	<input id="rate" type="text" name="rate" step="0.01">
+
+	<input type="submit" name="submit" value="Calculate"> 
+</form>
+
+<form>
+	<label for="monthlyPayment">Monthly Payment:</label>
+	<input id="monthlyPayment" type="text" name="monthyPayment" disabled>
+
+	<label for="totalPrincipal">Total Principal:</label>
+	<input id="totalPrincipal" type="text" name="totalPrincipal" disabled>
+
+	<label for="totalInterest">Total Interest:</label>
+	<input id="totalInterest" type="text" name="totalInterest" disabled>
+
+	<label for="total">Total principal and interest:</label>
+	<input id="total" type="text" name="total" disabled>
+</form>
+
+</body>
+</html>
